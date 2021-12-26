@@ -10,7 +10,7 @@ const setNumber =() =>{ //사용자 수에 따른 이름 입력 부분 출력
     if(number>0){
         $meddie_right.style.display='block'; //입력이 될 경우 바로 보이도록 설정
         for(let i=0;i<number;i++){ //반복문 실행
-            appendText+='<span>참가자 '+(i+1)+'</span><input type="text" id="user'+i+' placeholder="이름 입력"><br><br>';
+            appendText+='<span>참가자 '+(i+1)+'</span><input type="text" class="name_text" id="user'+i+' placeholder="이름 입력"><br><br>';
         }
         $number.value="";
     }else{
